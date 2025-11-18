@@ -1,0 +1,55 @@
+body, html {
+    min-height: 100%;
+}
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: radial-gradient(rgb(189, 253, 250), rgb(213, 230, 255));
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    height: 30px;
+}
+
+nav {
+    margin: auto;
+    width: 90%;
+    text-align: center;
+}
+
+input {
+    width: 50%;
+    border-radius: 20px;
+    padding: 2px;
+}
+
+input::placeholder {
+    padding-left: 2px;
+    font-size: 90%;
+}
+
+#profile {
+    border-radius: 50%;
+}
+
+main {
+    display: flex;
+}
+
+.selecionar {
+    background-color: rgba(255, 255, 255, 0.075);
+    border: solid, 1px, gray;
+    border-radius: 50%;
+}
+
+.selecionar:hover{
+    background-color: rgba(255, 255, 255, 0.466);
+    border: solid, 1px, gray;
+    border-radius: 50%;
+    transition: all, 0.5s;
+}
