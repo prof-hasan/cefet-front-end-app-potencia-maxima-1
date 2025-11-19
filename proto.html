@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <meta charset="utf-8">
         <link rel="stylesheet" href="estilos.css">
         <title>lista musical</title>
     </head>
@@ -16,13 +16,16 @@
             <button id="profile">😀</button>
         </header>
         <main>
-            <button class="selecionar"><</button>
+            <button class="selecionar" id="selecionar-esquerda"><</button>
 
-            <div id="playlists">
-                
-            </div>
+            <section id="lista-playlists">
+                <div id="deslizar"></div>
+                <div class="playlist"></div>
+                <div class="playlist"></div>
+                <div class="playlist"></div>
+            </section>
             
-            <button class="selecionar">></button>
+            <button class="selecionar" id="selecionar-direta">></button>
         </main>
     </body>
 </html>
