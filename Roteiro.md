@@ -12,7 +12,7 @@
 
 
 
--Criar a página principal com um design intuitivo e bonito 🔴
+-Criar a página principal com um design intuitivo e bonito 🤔
 
 
 
@@ -33,6 +33,7 @@
 
 
 -Fazer opção de login para que seja salvo as playlists ⚪
+
 
 
 
