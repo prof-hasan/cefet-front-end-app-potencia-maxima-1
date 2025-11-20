@@ -4,29 +4,35 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="estilos.css">
         <title>lista musical</title>
+        <script src="https://kit.fontawesome.com/c114eefcbd.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
             <nav>
                 <label>
-                    🔎
+                    <i class="fa-solid fa-magnifying-glass"></i>
                     <input type="text" placeholder="Buscar...">
                 </label>
             </nav>
-            <button id="profile">😀</button>
+            <button id="profile"><i class="fa-solid fa-user"></i></button>
         </header>
         <main>
-            <button class="selecionar" id="selecionar-esquerda"><</button>
+            <button class="navegar" id="botao-esquerdo"><i class="fa-solid fa-arrow-left"></i></button>
 
             <section id="lista-playlists">
-                <div id="deslizar">
                     <div class="playlist"></div>
                     <div class="playlist"></div>
                     <div class="playlist"></div>
-                </div>
             </section>
             
-            <button class="selecionar" id="selecionar-direta">></button>
+            <button class="navegar" id="botao-direito"><i class="fa-solid fa-arrow-right"></i></button>
+
+            <section id="botoes-interagir">
+                <button id="selecionar"><i class="fa-solid fa-play"></i></button>
+                <button id="criar"><i class="fa-solid fa-plus"></i></button>
+                <button id="remover"><i class="fa-solid fa-trash-can"></i></button>
+            </section>
         </main>
+        <script src="botões.js"></script>
     </body>
 </html>

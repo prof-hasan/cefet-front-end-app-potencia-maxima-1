@@ -7,6 +7,7 @@ body {
     background-repeat: no-repeat;
     background-image: radial-gradient(circle, rgb(255, 255, 255) ,rgb(129, 223, 255), rgb(134, 184, 255));
     margin: 0;
+    overflow: hidden;
 }
 
 header {
@@ -23,22 +24,26 @@ nav {
     justify-self: center;
 }
 
+nav label {
+    font-size: x-large;
+}
+
 input {
-    width: 50%;
-    height: 50%;
+    width: 40vw;
+    height: 4vh;
     border-radius: 20px;
-    padding: 2px;
+    font-size: medium;
 }
 
 input::placeholder {
-    padding-left: 2px;
+    margin-left: 5px;
     font-size: 90%;
 }
 
 #profile {
     margin: auto;
     border-radius: 50%;
-    height: 80%;
+    height: 5vh;
     aspect-ratio: 1 / 1;
 }
 
@@ -49,7 +54,7 @@ main {
     align-items: center;
 }
 
-.selecionar {
+.navegar {
     background-color: rgba(255, 255, 255, 0.362);
     border: solid, 1px, gray;
     border-radius: 50%;
@@ -58,21 +63,23 @@ main {
     margin: auto 30px;
 }
 
-.selecionar:hover{
+.navegar:hover{
     background-color: rgba(255, 255, 255, 0.795);
     border: solid, 1px, gray;
     border-radius: 50%;
     transition: all, 0.5s;
 }
 
-#selecionar-direta {
+#botao-direito {
     justify-self: end;
 }
 
 #lista-playlists  {
     width: 400px;
     aspect-ratio: 1 / 1;
-    overflow: hidden;
+    display: flex;
+    transition: ease, 1s;
+    z-index: -1;
 }
 
 #lista-playlists .playlist {
@@ -80,4 +87,27 @@ main {
     border-radius: 10%;
     width: 400px;
     aspect-ratio: 1 / 1;
+    margin-right: calc(((100vw - 400px) / 2) - 200px);
+}
+
+#botoes-interagir {
+    display: flex;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    justify-content: center;
+    gap: 2vw;
+}
+
+#botoes-interagir button {
+    width: 5vh;
+    aspect-ratio: 1 / 1;
+    transition: all, 0.5s;
+    border-radius: 50%;
+}
+
+#remover:hover {
+    background-color: red;
+    color: white;
+    transition: all, 0.5s;
+    border-color: white;
 }
