@@ -12,13 +12,13 @@
 
 
 
--Criar a página principal com um design intuitivo e bonito 🤔
+-Criar a página principal com um design intuitivo e bonito ✅
 
 
 
 -Implementar a função para adicionar músicas a playlists 🔴
 
-&nbsp;
+
 
 -Criar navegação entre musicas já escolhidas 🔴
 
@@ -34,6 +34,10 @@
 
 -Fazer opção de login para que seja salvo as playlists ⚪
 
+
+### **Observações**
+
+-O site usado para utilizar os icones é o Font Awesome, caso seja necessario usar mais icones vá até o site e copie a linha de código referente ao HTML
 
 
 
