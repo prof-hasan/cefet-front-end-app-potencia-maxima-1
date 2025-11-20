@@ -78,6 +78,7 @@ main {
     width: 400px;
     aspect-ratio: 1 / 1;
     display: flex;
+    gap: 400px;
     transition: ease, 1s;
     z-index: -1;
 }
@@ -87,7 +88,6 @@ main {
     border-radius: 10%;
     width: 400px;
     aspect-ratio: 1 / 1;
-    margin-right: calc(((100vw - 400px) / 2) - 200px);
 }
 
 #botoes-interagir {
