@@ -1,4 +1,8 @@
 let listaPlaylistEl = document.querySelector('#lista-playlists');
+let inputNome = document.querySelector('#adicionar-nome')
+let inputImg = document.querySelector('#adicionar-imagem');
+let inputFundo = document.querySelector('#adicionar-fundo');
+let inputTexto =document.querySelector('#adicionar-texto');
 
 let playlists = [
     {
@@ -87,7 +91,7 @@ let playlists = [
     }
 ];
 
-function addplaylist(e) {
+function adicionarlista(e) {
     let nome = e.nome;
     let img = e.img;
     let fundo = e.fundo;
@@ -104,6 +108,33 @@ function addplaylist(e) {
     novaPlaylistEl.style.color = `${texto}`;
 
     listaPlaylistEl.appendChild(novaPlaylistEl);
-}
+};
 
-playlists.forEach(addplaylist);
+function limparllista() {
+    listaPlaylistEl.innerHTML = '';
+};
+
+playlists.forEach(adicionarlista);
+
+function removeplaylist(indice) {
+    playlists.splice(indice, 1);
+    limparllista();
+    playlists.forEach(adicionarlista);
+};
+
+function adicionarPlaylist() {
+    let novaPlaylist = {
+        nome:`${inputNome.value}`,
+        img:`${inputImg.value}`,
+        fundo:`${inputFundo.value}`,
+        texto:`${inputTexto.value}`,
+        musicas:[]
+    };
+
+    playlists.unshift(novaPlaylist);
+
+    limparllista();
+    playlists.forEach(adicionarlista);
+};
+
+export { listaPlaylistEl, playlists, adicionarPlaylist, removeplaylist };

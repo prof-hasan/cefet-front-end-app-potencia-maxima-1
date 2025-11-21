@@ -6,7 +6,7 @@
         <title>lista musical</title>
         <script src="https://kit.fontawesome.com/c114eefcbd.js" crossorigin="anonymous"></script>
     </head>
-    <body>
+    <body class="dark">
         <header>
             <nav>
                 <label>
@@ -32,15 +32,29 @@
                 <button id="remover"><i class="fa-solid fa-trash-can"></i></button>
             </section>
             
+
         </main>
 
-        <div id="janelas-interacoes">
-            <section>
+        <div class="escondido" id="janelas-interacoes">
+            <section class="escondido" id="adicionar">
+                <h1>Adicionar Playlists</h1>
 
+                <article id="preenchimento">
+                    <label for="adicionar-nome">Nome:</label><input id="adicionar-nome" type="text" max="30" placeholder="Musica classica...">
+
+                    <label for="adicionar-imagem">Imagem:</label><input id="adicionar-imagem" type="text" placeholder="https//...">
+
+                    <label for="adicionar-fundo">Fundo:</label><input id="adicionar-fundo" type="color">
+
+                    <label for="adicionar-texto">Texto:</label><input id="adicionar-texto" type="color">
+                </article>
+                    
+                <button class="sair"><i class="fa-regular fa-circle-xmark"></i></button>
+                <button id="adicionar-confirmacao">Confirmar</button>
             </section>
         </div>
 
-        <script src="botões.js"></script>
-        <script src="playlists.js"></script>
+        <script src="./botoes.js" type="module"></script>
+        <script src="./playlists.js" type="module"></script>
     </body>
 </html>
