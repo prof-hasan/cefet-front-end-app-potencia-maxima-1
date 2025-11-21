@@ -1,3 +1,10 @@
+:root {
+    --fundo: #a4f4fb, #4ed3ff, #4290fc;
+    --navegacao-fundo: 162deg,#ffffff , #ffffff ;
+    --navegacao-input: #000000;
+    --sombra: #000000;
+}
+
 body, html {
     min-height: 100%;
 }
@@ -5,16 +12,23 @@ body, html {
 body {
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: radial-gradient(circle, rgb(255, 255, 255) ,rgb(129, 223, 255), rgb(134, 184, 255));
+    background-image: radial-gradient(circle, var(--fundo));
     margin: 0;
     overflow: hidden;
+}
+
+body.dark {
+    --fundo: #06175b, #0f0b47, #150733;
+    --navegacao-fundo: 166deg,#070054 0%, #310061 50%, #440187 100%;
+    --navegacao-input: #ffffff;
+    --sombra: #919191;
 }
 
 header {
     display: flex;
     justify-content: end;
     height: 10vh;
-    background-color: white;    
+    background-image: linear-gradient(var(--navegacao-fundo));    
 }
 
 nav {
@@ -26,6 +40,7 @@ nav {
 
 nav label {
     font-size: x-large;
+    color: var(--navegacao-input);
 }
 
 input {
@@ -33,11 +48,15 @@ input {
     height: 4vh;
     border-radius: 20px;
     font-size: medium;
+    border: var(--navegacao-input) 1px solid;
+    color: var(--navegacao-input);
+    background-color: transparent;
 }
 
 input::placeholder {
     margin-left: 5px;
     font-size: 90%;
+    color: var(--navegacao-input);
 }
 
 #profile {
@@ -88,25 +107,43 @@ main {
     border-radius: 10%;
     width: 400px;
     aspect-ratio: 1 / 1;
+    display: grid;
+    grid-template-rows: 40px 250px 1fr 20px;
+    justify-content: center;
+    align-content: center;
+    box-shadow: var(--sombra) 0 0 15px;
+}
+
+.playlist img {
+    max-width: 250px;
+    max-height:250px;
+    grid-row: 2 / 3;
+}
+
+.playlist h1 {
+    justify-self: center;
+    align-self: end;
+    grid-row: 3 / 4;
 }
 
 #botoes-interagir {
     display: flex;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    align-self: center;
     justify-content: center;
     gap: 2vw;
 }
 
 #botoes-interagir button {
-    width: 5vh;
+    width: 6vh;
     aspect-ratio: 1 / 1;
     transition: all, 0.5s;
     border-radius: 50%;
 }
 
 #remover:hover {
-    background-color: red;
+    background-color: rgb(218, 0, 0);
     color: white;
     transition: all, 0.5s;
     border-color: white;
