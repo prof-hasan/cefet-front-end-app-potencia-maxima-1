@@ -16,11 +16,19 @@
 
 
 
+-Implementar a função para adicionar playlists à lista ✅
+
+
+
+-Criar um dark mode 🤔
+
+
+
 -Implementar a função para adicionar músicas a playlists 🔴
 
 
 
--Criar navegação entre musicas já escolhidas 🔴
+-Criar navegação entre musicas já escolhidas e filtros 🔴
 
 
 
@@ -38,6 +46,7 @@
 ### **Observações**
 
 -O site usado para utilizar os icones é o Font Awesome, caso seja necessario usar mais icones vá até o site e copie a linha de código referente ao HTML
+
 
 
 
