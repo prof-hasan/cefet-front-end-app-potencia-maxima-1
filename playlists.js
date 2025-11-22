@@ -101,7 +101,7 @@ function adicionarlista(e) {
     novaPlaylistEl.classList.add('playlist');
     novaPlaylistEl.setAttribute("id", `playlist-${nome.replaceAll(' ', '').toLowerCase()}`);
 
-    novaPlaylistEl.innerHTML = `<img src="${img}" alt="Rap">
+    novaPlaylistEl.innerHTML = `<img src="${img}">
                                 <h1>${nome}</h1>`
 
     novaPlaylistEl.style.backgroundColor = `${fundo}`;
