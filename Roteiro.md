@@ -24,7 +24,7 @@
 
 -Criar navegação entre musicas já escolhidas 🔴
 
--Criar a opção de reproduzir 🔴
+-Criar a opção de reproduzir ✅
 
 -Criar uma biblioteca predefinida 🤔 🟡
 
@@ -35,6 +35,7 @@
 
 -O site usado para utilizar os icones é o Font Awesome, caso seja necessario usar mais icones vá até o site e copie a linha de código referente ao HTML
 -As musicas estão no seguinte repositório: https://github.com/potenciamusicas-ui/pmoutseinccaiamax
+
 
 
 
