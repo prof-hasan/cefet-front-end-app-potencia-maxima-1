@@ -1,4 +1,7 @@
+
 import { listaPlaylistEl, playlists, adicionarPlaylist, removeplaylist } from "./playlists.js";
+import { setIndicePlaylist, reproduzir } from "./player.js";
+
 
 let btnEsquerdoEl = document.querySelector('#botao-esquerdo');
 let btnDireitoEl = document.querySelector('#botao-direito');
@@ -8,8 +11,19 @@ let btnRemoverEl = document.querySelector('#remover');
 let btnAdicionarPlaylistEl = document.querySelector('#criar');
 let btnsSairEl = document.querySelectorAll('.sair')
 let btnAdicionarConfirmar = document.querySelector('#adicionar-confirmacao');
+let btnSelecionar = document.querySelector('#selecionar');
+
 
 let indice = 0;
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    let btnSelecionar = document.querySelector('#selecionar');
+    btnSelecionar.addEventListener("click", () => {
+        setIndicePlaylist(indice);
+        reproduzir();
+    });
+});
 
 btnDireitoEl.addEventListener('click', () => {
 if(indice == playlists.length - 1) {
@@ -78,3 +92,4 @@ function esconderJanelas() {
 
     return;
 }
+
