@@ -39,7 +39,7 @@ let playlists = [
         fundo:"#ffea00",
         texto:"#000000ff",
         musicas:[
-            {link:"rap/Eminem - Rap God (Audio) [S7cQ3b0iqLo].mp3",
+            {link:"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Eminem-RapGod-rap.mp3",
                 nome:"Rap God",
                 autor:"Eminem"
             },
@@ -47,7 +47,7 @@ let playlists = [
                 nome:"Without Me",
                 autor:"Eminem"
             },
-            {link:"rap/The Real Slim Shady [r5MR7_INQwg].mp3",
+            {link:"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Eminem-TheRealSlimShady-rap.mp3",
                 nome:"The Real Slim Shady",
                 autor:"Eminem"
             },
@@ -71,11 +71,11 @@ let playlists = [
                 nome:"ROXANNE",
                 autor:"Arizona Zervas"
             },
-            {link:"pop/Bruno Mars - The Lazy Song (Official Music Video) [fLexgOxsZu0].mp3",
+            {link:"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/BrunoMars-TheLazySong-pop.mp3",
                 nome:"The Lazy Song",
                 autor:"Bruno Mars"
             },
-            {link:"pop/Daft Punk - Get Lucky (Lyrics) ft. Pharrell Williams, Nile Rodgers [5glDAaCaazc].mp3",
+            {link:"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/DaftPunk-GetLucky-pop.mp3",
                 nome:"Get Lucky",
                 autor:"Daft Punk"
             },
