@@ -11,11 +11,11 @@ let playlists = [
         fundo:"#000000ff",
         texto:"#ffffffff",
         musicas:[
-            {link:"rock/AC_DC - Thunderstruck [mBksMIl9Kf0].mp3",
+            {link:"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/AC_DC-Thunderstruck-rock.mp3",
                 nome:"Thunderstruck",
                 autor:"AC_DC"
             },
-            {link:"rock/Black Sabbath - War Pigs [PrZFscfJxXc].mp3",
+            {link:"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/BlackSabbath-WarPigs-rock.mp3",
                 nome:"War Pigs",
                 autor:"Black Sabbath"
             },
@@ -23,7 +23,7 @@ let playlists = [
                 nome:"Sweet Child O' Mine",
                 autor:"Guns N' Roses"
             },
-            {link:"rock/Iron Man (2012 Remaster) [b3-QqGVt-tM].mp3",
+            {link:"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/BlackSabbath-IronMan-rock.mp33",
                 nome:"Iron Man (2012 Remaster)",
                 autor:"Black Sabbath"
             },
@@ -67,7 +67,7 @@ let playlists = [
         fundo:"#ffaaf9",
         texto:"#000000ff",
         musicas:[
-            {link:"pop/Arizona Zervas - ROXANNE (Lyrics) [mfYUtROIzDk].mp3",
+            {link:"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/ArizonaZervas-ROXANNE-pop.mp3",
                 nome:"ROXANNE",
                 autor:"Arizona Zervas"
             },
