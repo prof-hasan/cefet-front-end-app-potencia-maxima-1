@@ -19,7 +19,7 @@ let playlists = [
                 nome:"War Pigs",
                 autor:"Black Sabbath"
             },
-            {link:"rock/Guns N' Roses - Sweet Child O' Mine (Lyrics) [qoflJn7zkFM].mp3",
+            {link:"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/GunsN'Roses-SweetChildO'Mine-rock.mp3",
                 nome:"Sweet Child O' Mine",
                 autor:"Guns N' Roses"
             },
@@ -27,7 +27,7 @@ let playlists = [
                 nome:"Iron Man (2012 Remaster)",
                 autor:"Black Sabbath"
             },
-            {link:"rock/Ozzy Osbourne - No More Tears (Official Audio) [mX_8p7NaibQ].mp3",
+            {link:"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/OzzyOsbourne-NoMoreTears-rock.mp3",
                 nome:"No More Tears",
                 autor:"Ozzy Osbourne"
             }
@@ -43,7 +43,7 @@ let playlists = [
                 nome:"Rap God",
                 autor:"Eminem"
             },
-            {link:"rap/Eminem - Without Me (Audio) [pyb13N80DZQ].mp3",
+            {link:"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Eminem-WithoutMe-rap.mp3",
                 nome:"Without Me",
                 autor:"Eminem"
             },
@@ -51,11 +51,11 @@ let playlists = [
                 nome:"The Real Slim Shady",
                 autor:"Eminem"
             },
-            {link:"rap/Travis Scott - FE_N (Lyrics) [3OUdeW4HmgE].mp3",
+            {link:"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/TravisScott-FE_N-rap.mp3",
                 nome:"FE!N",
                 autor:"Travis Scott"
             },
-            {link:"rap/YG - Go Loko Ft Jon Z & Tyga (Lyrics) [EcXMJPqmbx4].mp3",
+            {link:"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/YG-GoLoko-rap.mp3",
                 nome:"Go Loko",
                 autor:"YG"
             }
@@ -79,11 +79,11 @@ let playlists = [
                 nome:"Get Lucky",
                 autor:"Daft Punk"
             },
-            {link:"pop/Steve Lacy - Bad Habit (Lyrics) [bU2EvRBUmxc].mp3",
+            {link:"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/SteveLacy-BadHabit-pop.mp3",
                 nome:"Bad Habit",
                 autor:"Steve Lacy"
             },
-            {link:"pop/TheFatRat - Unity [n8X9_MgEdCg].mp3",
+            {link:"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/TheFatRat-Unity-pop.mp3",
                 nome:"Unity",
                 autor:"TheFatRat"
             }
