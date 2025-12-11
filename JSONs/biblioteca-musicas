@@ -1,0 +1,377 @@
+[
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/AC_DC-Thunderstruck-rock.mp3",
+        "nome":"Thunderstruck",
+        "autor":"AC_DC",
+        "id": 1
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/BlackSabbath-WarPigs-rock.mp3",
+        "nome":"War Pigs",
+        "autor":"Black Sabbath",
+        "id": 2
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/GunsN'Roses-SweetChildO'Mine-rock.mp3",
+        "nome":"Sweet Child O' Mine",
+        "autor":"Guns N' Roses",
+        "id": 3
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/BlackSabbath-IronMan-rock.mp33",
+        "nome":"Iron Man (2012 Remaster)",
+        "autor":"Black Sabbath",
+        "id": 4
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/OzzyOsbourne-NoMoreTears-rock.mp3",
+        "nome":"No More Tears",
+        "autor":"Ozzy Osbourne",
+        "id": 5
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Eminem-RapGod-rap.mp3",
+        "nome":"Rap God",
+        "autor":"Eminem",
+        "id": 6
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Eminem-WithoutMe-rap.mp3",
+        "nome":"Without Me",
+        "autor":"Eminem",
+        "id": 7
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Eminem-TheRealSlimShady-rap.mp3",
+        "nome":"The Real Slim Shady",
+        "autor":"Eminem",
+        "id": 8
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/TravisScott-FE_N-rap.mp3",
+        "nome":"FE!N",
+        "autor":"Travis Scott",
+        "id": 9
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/YG-GoLoko-rap.mp3",
+        "nome":"Go Loko",
+        "autor":"YG",
+        "id": 10
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/ArizonaZervas-ROXANNE-pop.mp3",
+        "nome":"ROXANNE",
+        "autor":"Arizona Zervas",
+        "id": 11
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/BrunoMars-TheLazySong-pop.mp3",
+        "nome":"The Lazy Song",
+        "autor":"Bruno Mars",
+        "id": 12
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/DaftPunk-GetLucky-pop.mp3",
+        "nome":"Get Lucky",
+        "autor":"Daft Punk",
+        "id": 13
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/SteveLacy-BadHabit-pop.mp3",
+        "nome":"Bad Habit",
+        "autor":"Steve Lacy",
+        "id": 14
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/TheFatRat-Unity-pop.mp3",
+        "nome":"Unity",
+        "autor":"TheFatRat",
+        "id": 15
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Eletronica/Alok,%20Bruno%20Martini%20feat.%20Zeeba%20-%20Hear%20Me%20Now%20(Official%20Music%20Video)%20%5BJVpTp8IHdEg%5D.mp3",
+        "nome":"Hear Me Now",
+        "autor":"Alok, Bruno Martini, Zeeba",
+        "id": 16
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Eletronica/Avicii%20-%20Wake%20Me%20Up%20(Official%20Video)%20%5BIcrbM1l_BoI%5D.mp3",
+        "nome":"Wake Me Up",
+        "autor":"Avicii",
+        "id": 17
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Eletronica/Calvin%20Harris%20-%20Summer%20(Official%20Video)%20%5BebXbLfLACGM%5D.mp3",
+        "nome":"Summer",
+        "autor":"Calvin Harris",
+        "id": 18
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Eletronica/David%20Guetta%20-%20Titanium%20ft.%20Sia%20(Official%20Video)%20%5BJRfuAukYTKg%5D.mp3",
+        "nome":"Titanium",
+        "autor":"David Guetta ft. Sia",
+        "id": 19
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Eletronica/Diplo%20-%20Revolution%20(feat.%20Faustix%20&%20Imanos%20and%20Kai)%20%5BOfficial%20Music%20Video%5D%20%5Bnv76KvFV748%5D.mp3",
+        "nome":"Revolution",
+        "autor":"Diplo",
+        "id": 20
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Eletronica/Kygo%20-%20Firestone%20ft.%20Conrad%20Sewell%20(Official%20Video)%20%5B9Sc-ir2UwGU%5D.mp3",
+        "nome":"Firestone",
+        "autor":"Kygo",
+        "id": 21
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Eletronica/Marshmello%20-%20Alone%20(Official%20Music%20Video)%20%5BALZHF5UqnU4%5D.mp3",
+        "nome":"Alone",
+        "autor":"Marshmello",
+        "id": 22
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Eletronica/Martin%20Garrix%20-%20Animals%20(Official%20Video)%20%5BgCYcHz2k5x0%5D.mp3",
+        "nome":"Animals",
+        "autor":"Martin Garrix",
+        "id": 23
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Eletronica/Swedish%20House%20Mafia%20ft.%20John%20Martin%20-%20Don't%20You%20Worry%20Child%20(Official%20Video)%20%5B1y6smkh6c-0%5D.mp3",
+        "nome":"Don't You Worry Child",
+        "autor":"Swedish House Mafia",
+        "id": 24
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Eletronica/Zedd%20-%20Clarity%20ft.%20Foxes%20%5BIxxstCcJlsc%5D.mp3",
+        "nome":"Clarity",
+        "autor":"Zedd ft. Foxes",
+        "id": 25
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/MPB/Baby%20%5Bb7d6wnaRm2E%5D.mp3",
+        "nome":"Baby",
+        "autor":"Gal Costa",
+        "id": 26
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/MPB/Caetano%20Veloso%20-%20Sozinho%20%5Bj9UbE1slI-Q%5D.mp3",
+        "nome":"Sozinho",
+        "autor":"Caetano Veloso",
+        "id": 27
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/MPB/Chega%20de%20Saudade%20%5BY0a0QuLEC8A%5D.mp3",
+        "nome":"Chega de Saudade",
+        "autor":"João Gilberto",
+        "id": 28
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/MPB/Djavan%20-%20Sina%20(%C3%81udio%20Oficial)%20%5B5siQ-ml5lqY%5D.mp3",
+        "nome":"Sina",
+        "autor":"Djavan",
+        "id": 29
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/MPB/Chico%20Buarque%20-%20Roda%20Viva%20(Chico%20Buarque,%20Vol.%203)%20%5B%C3%81udio%20Oficial%5D%20%5BIzwBVOPu7iM%5D.mp3",
+        "nome":"Roda Viva",
+        "autor":"Chico Buarque",
+        "id": 30
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/MPB/Como%20Nossos%20Pais%20%5Bgdgj1kYqiFI%5D.mp3",
+        "nome":"Como Nossos Pais",
+        "autor":"Elis Regina",
+        "id": 31
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/MPB/Elis%20Regina%20&%20Tom%20Jobim%20-%20_Aguas%20de%20Mar%C3%A7o_%20-%201974%20%5BE1tOV7y94DY%5D.mp3",
+        "nome":"Águas de Março",
+        "autor":"Elis Regina & Tom Jobim",
+        "id": 32
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/MPB/Milton%20Nascimento%20-%20Maria,%20Maria%20(Ac%C3%BAstico)%20%5Br1bBD4f3MTc%5D.mp3",
+        "nome":"Maria, Maria",
+        "autor":"Milton Nascimento",
+        "id": 33
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/MPB/RECONVEXO%20(letra%20e%20v%C3%ADdeo)%20com%20MARIA%20BETH%C3%82NIA,%20v%C3%ADdeo%20MOACIR%20SILVEIRA%20%5BSnspsZYQogY%5D.mp3",
+        "nome":"Reconvexo",
+        "autor":"Maria Bethânia",
+        "id": 34
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/MPB/Toda%20Menina%20Baiana%20%5B4CpF7Xl97j4%5D.mp3",
+        "nome":"Toda Menina Baiana",
+        "autor":"Gilberto Gil",
+        "id": 35
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Funk/Anitta,%20Mc%20Zaac,%20Maejor%20feat.%20Tropkillaz%20&%20DJ%20Yuri%20Martins%20-%20Vai%20Malandra%20%5BOfficial%20Music%20Video%5D%20%5BkDhptBT_-VI%5D.mp3",
+        "nome":"Vai Malandra",
+        "autor":"Anitta, Mc Zaac, Maejor, Tropkillaz, DJ Yuri Martins",
+        "id": 36
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Funk/Dennis%20Dj,%20Bruno%20Martini,%20Vitin%20-%20Sou%20teu%20f%C3%A3%20(Gabe%20Pereira%20Remix)(1Fox)%20%5Br9DvJS4EyNc%5D.mp3",
+        "nome":"Sou Teu Fã (Remix)",
+        "autor":"Dennis DJ, Bruno Martini, Vitin",
+        "id": 37
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Funk/GLORIA%20GROOVE%20-%20VERMELHO%20(CLIPE%20OFICIAL)%20%5Bp4aPlYN6x1Q%5D.mp3",
+        "nome":"Vermelho",
+        "autor":"Gloria Groove",
+        "id": 38
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Funk/LUDMILLA%20-%20Din%20Din%20Din%20feat.%20Mc%20Pupio%20&%20Mc%20Doguinha%20(Clipe%20Oficial)%20%5BFrJJlbHlxsI%5D.mp3",
+        "nome":"Din Din Din",
+        "autor":"Ludmilla, Mc Pupio, Mc Doguinha",
+        "id": 39
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Funk/Lexa%20e%20Mc%20Lan%20-%20Sapequinha%20__%20(Coreografia%20Oficial)%20%5B96ql8x07jcE%5D.mp3",
+        "nome":"Sapequinha",
+        "autor":"Lexa & Mc Lan",
+        "id": 40
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Funk/MC%20Don%20Juan%20-%20Vai%20Voltar%20Chorando%20(GR6%20Filmes)%20DJ%20Yuri%20Martins,%20DJ%20DG%20e%20Batid%C3%A3o%20Stronda%20%5Bm-ULSz2gAwQ%5D.mp3",
+        "nome":"Vai Voltar Chorando",
+        "autor":"MC Don Juan, DJ Yuri Martins, DJ DG, Batidão Stronda",
+        "id": 41
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Funk/MC%20Kevinho%20-%20Olha%20a%20Explos%C3%A3o%20(KondZilla)%20_%20Official%20Music%20Video%20%5B3yd_eoMOvqk%5D.mp3",
+        "nome":"Olha a Explosão",
+        "autor":"MC Kevinho",
+        "id": 42
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Funk/MC%20Livinho%20-%20Fazer%20Falta%20(Videoclipe%20Oficial)%20Perera%20DJ%20%5BbUeuvDCrqr0%5D.mp3",
+        "nome":"Fazer Falta",
+        "autor":"MC Livinho",
+        "id": 43
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Funk/PEDRO%20SAMPAIO%20-%20GALOPA%20(COREOGRAFIA%20OFICIAL)%20%5BQYyAVW84rpk%5D.mp3",
+        "nome":"Galopa",
+        "autor":"Pedro Sampaio",
+        "id": 44
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Funk/Pabllo%20Vittar%20-%20K.O.%20(Videoclipe%20Oficial)%20%5B3L5D8by1AtI%5D.mp3",
+        "nome":"K.O.",
+        "autor":"Pabllo Vittar",
+        "id": 45
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Lofi/Aso%20-%20Seasons%20%5BXo3ez6LThQ4%5D.mp3",
+        "nome":"Seasons",
+        "autor":"Aso",
+        "id": 46
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Lofi/Eevee%20-%20Unexpected%20%5BFull%20BeatTape%5D%20%5BI9P7R3vGNcA%5D.mp3",
+        "nome":"Unexpected",
+        "autor":"Eevee",
+        "id": 47
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Lofi/Idealism%20-%20Both%20Of%20Us%20%5BDjz-AXDO27Q%5D.mp3",
+        "nome":"Both Of Us",
+        "autor":"Idealism",
+        "id": 48
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Lofi/Jinsang%20-%20Bliss%20Extended%20%5Bc1nCAGZTTqI%5D.mp3",
+        "nome":"Bliss (Extended)",
+        "autor":"Jinsang",
+        "id": 49
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Lofi/Loathe%20-%20Is%20It%20Really%20You_%20(OFFICIAL%20AUDIO%20STREAM)%20%5BpQzxNLfAW8o%5D.mp3",
+        "nome":"Is It Really You?",
+        "autor":"Loathe",
+        "id": 50
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Lofi/Lofi%20Girl%20-%20Snowman%20(Music%20Video)%20%5B1P5BSm_oFJg%5D.mp3",
+        "nome":"Snowman",
+        "autor":"Lofi Girl",
+        "id": 51
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Lofi/Smile%20%5BkGCoTH2o37k%5D.mp3",
+        "nome":"Smile",
+        "autor":"Unknown",
+        "id": 52
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Lofi/harris%20cole%20-%20game%20over_%20%5BfTQb5umb1dg%5D.mp3",
+        "nome":"game over_",
+        "autor":"Harris Cole",
+        "id": 53
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Lofi/just%20friends%20%5BqOif_ni_9zc%5D.mp3",
+        "nome":"Just Friends",
+        "autor":"Unknown",
+        "id": 54
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Lofi/oatmello%20-%20sunset%20%5BV7-Tj_9EkRA%5D.mp3",
+        "nome":"Sunset",
+        "autor":"Oatmello",
+        "id": 55
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Raggaeton/Bad%20Bunny%20-%20Tit%C3%AD%20Me%20Pregunt%C3%B3%20(Video%20Oficial)%20_%20Un%20Verano%20Sin%20Ti%20%5BCr8K88UcO0s%5D.mp3",
+        "nome":"Tití Me Preguntó",
+        "autor":"Bad Bunny",
+        "id": 56
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Raggaeton/Becky%20G,%20Bad%20Bunny%20-%20Mayores%20(Official%20Video)%20%5BGMFewiplIbw%5D.mp3",
+        "nome":"Mayores",
+        "autor":"Becky G & Bad Bunny",
+        "id": 57
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Raggaeton/Daddy%20Yankee%20-%20Gasolina%20(Video%20Oficial)%20%5BCCF1_jI8Prk%5D.mp3",
+        "nome":"Gasolina",
+        "autor":"Daddy Yankee",
+        "id": 58
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Raggaeton/J%20Balvin%20&%20Willy%20William%20-%20Mi%20Gente%20(Steve%20Aoki%20Remix)%20%5BOfficial%20Music%20Video%5D%20%5ButiEvVjxbtQ%5D.mp3",
+        "nome":"Mi Gente (Remix)",
+        "autor":"J Balvin & Willy William",
+        "id": 59
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Raggaeton/KAROL%20G%20-%20Provenza%20(Official%20Video)%20%5Bca48oMV59LU%5D.mp3",
+        "nome":"Provenza",
+        "autor":"Karol G",
+        "id": 60
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Raggaeton/Maluma%20-%20Felices%20los%204%20(Official%20Video)%20%5Bt_jHrUE5IOk%5D.mp3",
+        "nome":"Felices Los 4",
+        "autor":"Maluma",
+        "id": 61
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Raggaeton/Natti%20Natasha%20%E2%9D%8C%20Ozuna%20-%20Criminal%20%5BOfficial%20Video%5D%20%5BVqEbCxg2bNI%5D.mp3",
+        "nome":"Criminal",
+        "autor":"Natti Natasha & Ozuna",
+        "id": 62
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Raggaeton/Ozuna%20-%20Caramelo%20(Video%20Oficial)%20%5BBFlG5sD540k%5D.mp3",
+        "nome":"Caramelo",
+        "autor":"Ozuna",
+        "id": 63
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Raggaeton/Rosal%C3%ADa%20-%20Despech%C3%A1%20(Tradu%C3%A7%C3%A3o)%20(Legendado)%20(Clipe%20Oficial)%20%5BVNYr8VgD-4Y%5D.mp3",
+        "nome":"Despechá",
+        "autor":"Rosalía",
+        "id": 64
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Raggaeton/Shakira%20-%20Chantaje%20(Official%20Video)%20ft.%20Maluma%20%5B6Mgqbai3fKo%5D.mp3",
+        "nome":"Chantaje",
+        "autor":"Shakira ft. Maluma",
+        "id": 65
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Sertanejo/Chit%C3%A3ozinho%20&%20Xoror%C3%B3%20-%20Evid%C3%AAncias%20(A%C3%BAdio%20Oficial)%20%5BzjE7l9h4XfI%5D.mp3",
+        "nome":"Evidências",
+        "autor":"Chitãozinho & Xororó",
+        "id": 66
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Sertanejo/Bruno%20%26%20Marrone%20-%20Dormi%20Na%20Pra%C3%A7a%20(Ao%20Vivo)%20%5BHQ%5D%20%5BbgAU5wmTzQw%5D.mp3",
+        "nome":"Dormi na Praça",
+        "autor":"Bruno & Marrone",
+        "id": 67
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Sertanejo/z%C3%A9%20henrique%20e%20gabriel%20-%20um%20louco%20%5BYAyMsl5sci0%5D.mp3",
+        "nome":"Um Louco",
+        "autor":"Zé Henrique & Gabriel",
+        "id": 68
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Sertanejo/jo%C3%A3o%20bosco%20e%20vinicius%20-%20chora,%20me%20liga%20(%20dvd%20curti%C3%A7%C3%A3o%20)%20%5BCNHk0Lh3qRg%5D.mp3",
+        "nome":"Chora, Me Liga",
+        "autor":"João Bosco & Vinícius",
+        "id": 69
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Sertanejo/Ra%C3%A7a%20Negra%20-%20Cheia%20De%20Manias%20(A%C3%BAdio%20Oficial)%20%D7%98%20%D7%A1%D7%A0%D7%95%D7%A0%D7%A4%20%20%5BhoDP8zsWgqs%5D.mp3",
+        "nome":"Cheia de Manias",
+        "autor":"Raça Negra",
+        "id": 70
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Sertanejo/Leandro%20%26%20Leonardo%20-%20Pense%20em%20Mim%20%5BGx7CdUR2YHk%5D.mp3",
+        "nome":"Pense em Mim",
+        "autor":"Leandro & Leonardo",
+        "id": 71
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Sertanejo/Hugo%20%26%20Guilherme,%20Mar%C3%ADlia%20Mendon%C3%A7a%20-%20Mal%20Feito%20-%20Ao%20Vivo%20Em%20Bras%C3%ADlia%20%5Bin-dvc-Z3v4%5D.mp3",
+        "nome":"Mal Feito",
+        "autor":"Hugo & Guilherme, Marília Mendonça",
+        "id": 72
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Sertanejo/Munhoz%20e%20Mariano%20-%20Camaro%20Amarelo%20(ao%20vivo%20em%20Campo%20Grande)%20%5BiJwXo0gkxa0%5D.mp3",
+        "nome":"Camaro Amarelo",
+        "autor":"Munhoz & Mariano",
+        "id": 73
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Sertanejo/Jorge%20%26%20Mateus%20-%20Amo%20Noite%20E%20Dia%20(%C3%81udio%20Oficial)%20%5BxmYdtl9A6DE%5D.mp3",
+        "nome":"Amo Noite e Dia",
+        "autor":"Jorge & Mateus",
+        "id": 74
+    },
+    {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Sertanejo/Matogrosso%20%26%20Mathias%20E%20Ainda%20Ontem%20Chorei%20De%20Saudade%20DVD%20%5BGOLZ7SL_x_E%5D.mp3",
+        "nome":"Ainda Ontem Chorei de Saudade",
+        "autor":"Matogrosso & Mathias",
+        "id": 75
+    }
+]
