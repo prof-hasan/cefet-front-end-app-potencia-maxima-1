@@ -1,6 +1,6 @@
 
 import { listaPlaylistEl, playlists, adicionarPlaylist, removeplaylist } from "./playlists.js";
-import { setIndicePlaylist, reproduzir } from "./player.js";
+import { setIndicePlaylist, reproduzir, proximaMusica, musicaAnterior } from "./player.js";
 
 
 let btnEsquerdoEl = document.querySelector('#botao-esquerdo');
@@ -12,40 +12,25 @@ let btnAdicionarPlaylistEl = document.querySelector('#criar');
 let btnsSairEl = document.querySelectorAll('.sair')
 let btnAdicionarConfirmar = document.querySelector('#adicionar-confirmacao');
 let btnSelecionar = document.querySelector('#selecionar');
+let btnVoltarMusica = document.querySelector('#voltar-musica');
+let btnProximaMusica = document.querySelector('#proxima-musica');
 
 
 let indice = 0;
 
 
-document.addEventListener("DOMContentLoaded", () => {
-    let btnSelecionar = document.querySelector('#selecionar');
-    btnSelecionar.addEventListener("click", () => {
-        setIndicePlaylist(indice);
-        reproduzir();
-    });
+btnSelecionar.addEventListener("click", () => {
+    console.log("▶ Iniciando playlist:", indice);
+    setIndicePlaylist(indice);
+    reproduzir();
+});
+btnProximaMusica.addEventListener("click", () => {
+    proximaMusica();
+});
+btnVoltarMusica.addEventListener("click", () => {
+    musicaAnterior();
 });
 
-btnDireitoEl.addEventListener('click', () => {
-if(indice == playlists.length - 1) {
-    indice = 0;
-    listaPlaylistEl.style.transform = `translateX(${-indice * 800}px)`;
-    return;
-}
-
-indice++;
-listaPlaylistEl.style.transform = `translateX(${-indice * 800}px)`;
-});
-
-btnEsquerdoEl.addEventListener('click', () => {
-    if(indice == 0) { 
-        indice = playlists.length - 1;
-        listaPlaylistEl.style.transform = `translateX(${-indice * 800}px)`; 
-        return;
-    }
-
-    indice--;
-    listaPlaylistEl.style.transform = `translateX(${-indice * 800}px)`;
-});
 
 btnDarkMode.addEventListener("click", () => {
     let bodyEl = document.querySelector('body');
