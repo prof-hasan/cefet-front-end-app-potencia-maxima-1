@@ -16,7 +16,7 @@
 
 -Implementar função para remover playlist ✅
 
--Criar uma função de filtro (exigencia) 🔴
+-Criar uma função de filtro (exigencia) 🤔
 
 -Criar um dark mode 🤔 🟢
 
@@ -24,12 +24,9 @@
 
 -Criar navegação entre musicas já escolhidas 🔴
 
--Criar a opção de reproduzir 🔴
+-Criar a opção de reproduzir ✅
 
--Criar uma biblioteca predefinida 🤔 🟡
-
--Fazer opção de login para que seja salvo as playlists ⚪
-
+-Criar uma biblioteca predefinida ✅ 🟡
 
 ### **Observações**
 

@@ -29,45 +29,73 @@ body.dark {
 }
 
 header {
-    display: flex;
-    justify-content: end;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
     height: 10vh;
-    background-image: linear-gradient(var(--navegacao-fundo));    
+    background-image: linear-gradient(var(--navegacao-fundo));  
+    justify-items: center;  
 }
 
 nav {
+    grid-column: 2 / 3;
     margin: auto;
-    width: 90%;
     text-align: center;
-    justify-self: center;
-}
-
-nav label {
     font-size: x-large;
+    border: solid 3px var(--navegacao-input);
+    border-radius: 20px;
+    padding: 3px;
+    overflow-x: hidden;
     color: var(--navegacao-input);
 }
 
 nav input {
     width: 40vw;
-    height: 4vh;
-    border-radius: 20px;
-    font-size: medium;
-    border: var(--navegacao-input) 1px solid;
-    color: var(--navegacao-input);
-    background-color: transparent;
-}
-
-nav input::placeholder {
-    margin-left: 5px;
-    font-size: 90%;
+    height: 3vh;
+    font-size: large;
+    background: transparent;
+    border: none;
     color: var(--navegacao-input);
 }
 
-#profile {
-    margin: auto;
-    border-radius: 50%;
+nav input:focus {
+    outline: none;
+}
+
+#outros {
+    grid-column: 3 / 4;
+    margin: auto 10px auto auto;
+}
+
+#outros button {
     height: 5vh;
     aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-color: transparent;
+    color: var(--navegacao-input);
+    padding: 2px;
+}
+
+#caixa-de-pesquisa {
+    width: 40vw;
+    height: 0vh;
+    position: absolute;
+    opacity: 0;
+    top: 10vh;
+    background-color: #ffffff;
+    transition: ease 0.5s;
+}
+
+#caixa-de-pesquisa.ativa {
+    width: 40vw;
+    height: 40vh;
+    position: absolute;
+    top: 10vh;
+    background-color: #ffffff;
+    opacity: 1;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow-y: hidden;
+    transition: ease 0.5s;
 }
 
 main {
@@ -167,63 +195,6 @@ main {
     opacity: 1;
 }
 
-#janela-musicas {
-    height: 100vh;
-    width: 100vw;
-    background-color: #020202a9;
-    z-index: 5;
-    position: absolute;
-    top: 0;
-    display: grid;
-    grid-template-columns: 1fr 35vw 1fr;
-    grid-template-rows: 1fr 70vh 1fr;
-    transition: ease-in 0.5s;
-    opacity: 1;
-}
-
-#coloca-musica {
-    grid-row: 2 / 3;
-    grid-column: 2 / 3;
-    background-image: radial-gradient( var(--fundo-interacoes));
-    color: var(--navegacao-input);
-    display: grid;
-    grid-template-rows: 1fr 2fr 1fr;
-    border-radius: 10%;
-    padding: 5%;
-    position: relative;
-    opacity: 1;
-    transition: ease-in 0.5s;
-    box-shadow: var(--contraste-sair);
-}
-
-#coloca-musica h1 {
-    grid-row: 1 / 2;
-    justify-self: center;
-    margin-bottom: 20%;
-}
-
-#coloca-musica #preencher {
-    display: grid;
-    grid-template-columns: 1fr  2fr;
-    grid-template-rows: 1fr  1fr  1fr  1fr;
-    align-items: center;
-    gap: 5px;
-}
-
-#btn-musica {
-    height: 50%;
-    width: 40%;
-    justify-self: center;
-    align-self: end;
-    margin-bottom: 5%;
-    border: var(--navegacao-input) 2px solid;
-    color: var(--navegacao-input);
-    background-color: transparent;
-    font-size: large;
-    border-radius: 20px;
-    transition: all, 0.5s;
-}
-
 #adicionar {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
@@ -297,37 +268,6 @@ main {
 }
 
 #janelas-interacoes.escondido, #adicionar.escondido {
-    opacity: 0;
-    transition: ease-out 0.5s;
-    z-index: -2;
-}
-
-.exit {
-    position: absolute;
-    top: 5%;
-    right: 7%;
-    width: 5%;
-    aspect-ratio: 1 / 1;
-    font-size: 1.5em;
-    justify-self: end;
-    top: 6%;
-    right: 5%;
-    justify-self: end;
-    background-color: transparent;
-    border: none;
-    color: var(--navegacao-input);
-    transition: all, 0.5s;
-    text-align: center;
-}
-
-.exit:hover {
-    text-shadow: var(--contraste-sair);
-    transition: all, 0.5s;
-}
-
-
-
-#janela-musicas.oculto, #coloca-musicas.oculto {
     opacity: 0;
     transition: ease-out 0.5s;
     z-index: -2;

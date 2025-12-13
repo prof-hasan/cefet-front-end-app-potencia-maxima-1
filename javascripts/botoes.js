@@ -1,26 +1,54 @@
 
 import { listaPlaylistEl, playlists, adicionarPlaylist, removeplaylist } from "./playlists.js";
-import { setIndicePlaylist, adicionaMusica, reproduzir, proximaMusica, musicaAnterior } from "./player.js";
+import { setIndicePlaylist, reproduzir, proximaMusica, musicaAnterior } from "./player.js";
 
 
 let btnEsquerdoEl = document.querySelector('#botao-esquerdo');
 let btnDireitoEl = document.querySelector('#botao-direito');
 let btnProfileMenuEl = document.querySelector('#profile');
-let btnDarkMode = document.querySelector('#dark-mode');
+let btnDarkModeEl = document.querySelector('#dark-mode');
+let inputPesquisaEl = document.querySelector('#pesquisar')
 let btnRemoverEl = document.querySelector('#remover');
 let btnAdicionarPlaylistEl = document.querySelector('#criar');
-let btnAdicionaMusicasEl = document.querySelector('#adiciona-musica');
-let btnsSairEl = document.querySelectorAll('.sair');
-let btnExitEl = document.querySelectorAll('.exit');
+let btnsSairEl = document.querySelectorAll('.sair')
 let btnAdicionarConfirmar = document.querySelector('#adicionar-confirmacao');
-let btnAdicionaMusicas = document.querySelector('#btn-musica');
 let btnSelecionar = document.querySelector('#selecionar');
 let btnVoltarMusica = document.querySelector('#voltar-musica');
 let btnProximaMusica = document.querySelector('#proxima-musica');
+let caixaPesquisaEl = document.querySelector('#caixa-de-pesquisa');
 
 
 let indice = 0;
+let darkMode = localStorage.getItem('userDark');
+darkMode = JSON.parse(darkMode) || false;
 
+if(darkMode === true) {
+    let bodyEl = document.querySelector('body');
+
+    bodyEl.classList.add('dark');
+}
+
+btnDireitoEl.addEventListener('click', () => {
+    if(indice == playlists.length - 1) {
+        indice = 0;
+        listaPlaylistEl.style.transform = `translateX(${-indice * 800}px)`;
+        return;
+    }
+
+    indice++;
+    listaPlaylistEl.style.transform = `translateX(${-indice * 800}px)`;
+});
+
+btnEsquerdoEl.addEventListener('click', () => {
+    if(indice == 0) { 
+        indice = playlists.length - 1;
+        listaPlaylistEl.style.transform = `translateX(${-indice * 800}px)`; 
+        return;
+    }
+
+    indice--;
+    listaPlaylistEl.style.transform = `translateX(${-indice * 800}px)`;
+});
 
 btnSelecionar.addEventListener("click", () => {
     console.log("▶ Iniciando playlist:", indice);
@@ -35,8 +63,12 @@ btnVoltarMusica.addEventListener("click", () => {
 });
 
 
-btnDarkMode.addEventListener("click", () => {
+btnDarkModeEl.addEventListener("click", () => {
     let bodyEl = document.querySelector('body');
+
+    darkMode = !darkMode;
+
+    darkMode = localStorage.setItem('userDark', JSON.stringify(darkMode))
 
     bodyEl.classList.toggle('dark');
 });
@@ -60,21 +92,8 @@ btnAdicionarPlaylistEl.addEventListener("click", () => {
     return;
 });
 
-btnAdicionaMusicasEl.addEventListener("click", () => {
-    let janelaMusica = document.querySelector('#janela-musicas');
-    let janelaSelecionaMusicas = document.querySelector('#coloca-musica');
-
-    janelaMusica.classList.toggle('oculto');
-    janelaSelecionaMusicas.classList.toggle('oculto');
-
-    return;
-});
-
 btnsSairEl.forEach(btn => {
     btn.addEventListener("click", () => esconderJanelas())});
-
-btnExitEl.forEach(btn => {
-    btn.addEventListener('click', () => ocultarJanelas())});
 
 btnAdicionarConfirmar.addEventListener("click", () => {
     adicionarPlaylist();
@@ -82,11 +101,6 @@ btnAdicionarConfirmar.addEventListener("click", () => {
     listaPlaylistEl.style.transform = `translateX(${-indice * 800}px)`;
 
     esconderJanelas();
-});
-
-btnAdicionaMusicas.addEventListener('click', () => {
-    adicionaMusica();
-    ocultarJanelas();
 });
 
 function esconderJanelas() {
@@ -99,12 +113,10 @@ function esconderJanelas() {
     return;
 }
 
-function ocultarJanelas() {
-    let janelaMusica = document.querySelector('#janela-musicas');
-    let janelaSelecionaMusicas = document.querySelector('#coloca-musica');
+inputPesquisaEl.addEventListener('focus', () => {
+    caixaPesquisaEl.classList.toggle('ativa');
+});
 
-    janelaMusica.classList.toggle('oculto');
-    janelaSelecionaMusicas.classList.toggle('oculto');
-
-    return;
-}
+inputPesquisaEl.addEventListener('blur', () => {
+    caixaPesquisaEl.classList.toggle('ativa');
+});

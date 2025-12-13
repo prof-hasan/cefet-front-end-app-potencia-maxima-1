@@ -6,16 +6,21 @@
         <title>lista musical</title>
         <script src="https://kit.fontawesome.com/c114eefcbd.js" crossorigin="anonymous"></script>
     </head>
-    <body class="dark">
+    <body>
         <header>
             <nav>
-                <label>
+                <label for="pesquisar">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="text" placeholder="Buscar...">
                 </label>
+                <input id="pesquisar" type="text" placeholder="Buscar Playlist...">
             </nav>
-            <button id="dark-mode"><i class="fa-solid fa-circle-half-stroke"></i></button>
-            <button id="profile"><i class="fa-solid fa-user"></i></button>
+            <article id="outros">
+                <button id="dark-mode"><i class="fa-solid fa-circle-half-stroke"></i></button>
+                <button id="profile"><i class="fa-solid fa-user"></i></button>
+            </article>
+            <section id="caixa-de-pesquisa">
+                a
+            </section>
         </header>
         <main>
             <button class="navegar" id="botao-esquerdo"><i class="fa-solid fa-arrow-left"></i></button>
@@ -32,8 +37,6 @@
                 <button id="remover"><i class="fa-solid fa-trash-can"></i></button>
                 <button id="voltar-musica"><i class="fa-solid fa-backward"></i></button>
                 <button id="proxima-musica"><i class="fa-solid fa-forward"></i></button>
-                <button id="adiciona-musica"><i class="fa-solid fa-bars"></i></button>
-
             </section>
             
 
@@ -58,26 +61,9 @@
             </section>
         </div>
 
-        <div class="oculto" id="janela-musicas">
-            <section class="oculto" id="coloca-musica">
-                <h1>Adicionar musica(s)</h1>
 
-                <article id="preencher">
-                    <input type="checkbox" value="1">Thunderstruck - AC/DC <br>
-                    <input type="checkbox" value="2">War pigs - Black Sabbath <br>
-                    <input type="checkbox" value="3">Sweet Child O' Mine - Guns N' Roses <br>
-                    <input type="checkbox" value="4">Iron Man - Black Sabbath <br>
-                    <input type="checkbox" value="5">No More Tears - Ozzy Osbourne <br>
-                </article>
-
-                <button class="exit"><i class="fa-regular fa-circle-xmark"></i></button>
-                <button id="btn-musica">Adicionar musica(s)</button>
-            </section>
-        </div>
-
-
-        <script src="./playlists.js" type="module"></script>
-        <script src="./player.js" type="module"></script>
-        <script src="./botoes.js" type="module"></script>
+        <script src="./javascripts/playlists.js" type="module"></script>
+        <script src="./javascripts/player.js" type="module"></script>
+        <script src="./javascripts/botoes.js" type="module"></script>
     </body>
 </html>
