@@ -82,10 +82,13 @@ nav input:focus {
     opacity: 0;
     top: 10vh;
     background-color: #ffffff;
+    z-index: -1;
     transition: ease 0.5s;
 }
 
+
 #caixa-de-pesquisa.ativa {
+    display: block;
     width: 40vw;
     height: 40vh;
     position: absolute;
@@ -94,8 +97,45 @@ nav input:focus {
     opacity: 1;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    overflow-y: hidden;
+    overflow-y: scroll;
+    z-index: 1;
     transition: ease 0.5s;
+}
+
+#caixa-de-pesquisa.ativa .item {
+    opacity: 1;  
+    height: 10vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    border-bottom: 1px solid black;
+    overflow-y: hidden;
+}
+
+#caixa-de-pesquisa .item {
+    opacity: 0;  
+    height: 10vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    border-bottom: 1px solid black;
+    overflow-y: hidden;
+    scrollbar-width: none;
+}
+
+#caixa-de-pesquisa::-webkit-scrollbar {
+    display: none;
+}
+
+.item .btn-pesquisa {
+    align-self: end;
+    width: 30%;
+    aspect-ratio: 1 / 1;
+    margin: auto;
+}
+
+.item h2 {
+    margin: auto auto auto 10%;
 }
 
 main {

@@ -4,6 +4,7 @@
         "img":"https://media.istockphoto.com/id/1183921035/pt/vetorial/rock-sign-gesture-with-lightning-for-your-design.jpg?s=1024x1024&w=is&k=20&c=5W_jMiqJwQ3HQKqM5kSe_Ygm7t60UkLYXGPvHDub1gg=",
         "fundo":"#000000ff",
         "texto":"#ffffffff",
+        "id": 1,
         "musicas":[
             {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/AC_DC-Thunderstruck-rock.mp3",
                 "nome":"Thunderstruck",
@@ -20,7 +21,7 @@
                 "autor":"Guns N' Roses",
                 "id": 3
             },
-            {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/BlackSabbath-IronMan-rock.mp33",
+            {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/BlackSabbath-IronMan-rock.mp3",
                 "nome":"Iron Man (2012 Remaster)",
                 "autor":"Black Sabbath",
                 "id": 4
@@ -37,6 +38,7 @@
         "img":"https://pngimg.com/d/rap_PNG23.png",
         "fundo":"#ffea00",
         "texto":"#000000ff",
+        "id": 2,
         "musicas":[
             {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Eminem-RapGod-rap.mp3",
                 "nome":"Rap God",
@@ -70,6 +72,7 @@
         "img":"https://upload.wikimedia.org/wikipedia/commons/f/f8/Pop_Music_Barnstar.png",
         "fundo":"#ffaaf9",
         "texto":"#000000ff",
+        "id": 3,
         "musicas":[
             {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/ArizonaZervas-ROXANNE-pop.mp3",
                 "nome":"ROXANNE",
@@ -100,9 +103,10 @@
     },
     {
         "nome":"Eletronica",
-        "img":"https://cdn-icons-png.flaticon.com/512/727/727245.png",
-        "fundo":"#0a0a0a",
+        "img":"https://www.studioshock.com.br/wp-content/uploads/DUTcK_rXcAA-5L5.jpg",
+        "fundo":"#040509",
         "texto":"#ffffffff",
+        "id": 4,
         "musicas":[
             {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Eletronica/Alok,%20Bruno%20Martini%20feat.%20Zeeba%20-%20Hear%20Me%20Now%20(Official%20Music%20Video)%20%5BJVpTp8IHdEg%5D.mp3",
                 "nome":"Hear Me Now",
@@ -158,9 +162,10 @@
     },
     {
         "nome":"MPB",
-        "img":"https://upload.wikimedia.org/wikipedia/commons/4/49/Brazil_music_icon.png",
-        "fundo":"#ffe7a1",
+        "img":"https://i.pinimg.com/736x/e8/b5/b5/e8b5b5520502c4fbb618c90d61b2abdd.jpg",
+        "fundo":"#369bcf",
         "texto":"#000000ff",
+        "id": 5,
         "musicas":[
             {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/MPB/Baby%20%5Bb7d6wnaRm2E%5D.mp3",
                 "nome":"Baby",
@@ -216,9 +221,10 @@
     },
     {
         "nome":"Funk",
-        "img":"https://upload.wikimedia.org/wikipedia/commons/0/0e/Funk_icon.png",
-        "fundo":"#ff9bb1",
-        "texto":"#000000ff",
+        "img":"https://thumbs.dreamstime.com/b/tipo-imagem-da-rotula%C3%A7%C3%A3o-m%C3%BAsica-do-funk-vetor-projeto-127531091.jpg",
+        "fundo":"#58382c",
+        "texto":"#ffba52",
+        "id": 6,
         "musicas":[
             {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Funk/Anitta,%20Mc%20Zaac,%20Maejor%20feat.%20Tropkillaz%20&%20DJ%20Yuri%20Martins%20-%20Vai%20Malandra%20%5BOfficial%20Music%20Video%5D%20%5BkDhptBT_-VI%5D.mp3",
                 "nome":"Vai Malandra",
@@ -274,9 +280,10 @@
     },
     {
         "nome":"LoFi",
-        "img":"https://upload.wikimedia.org/wikipedia/commons/8/8a/Lo-fi_icon.png",
-        "fundo":"#c7b7ff",
-        "texto":"#000000ff",
+        "img":"https://upload.wikimedia.org/wikipedia/vi/2/23/Lofi_girl_logo.jpg",
+        "fundo":"#191919",
+        "texto":"#ffffff",
+        "id": 7,
         "musicas":[
             {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Lofi/Aso%20-%20Seasons%20%5BXo3ez6LThQ4%5D.mp3",
                 "nome":"Seasons",
@@ -332,9 +339,10 @@
     },
     {
         "nome":"Raggaeton",
-        "img":"https://upload.wikimedia.org/wikipedia/commons/5/58/Reggaeton-icon.png",
-        "fundo":"#ffd18a",
-        "texto":"#000000ff",
+        "img":"https://img.freepik.com/vetores-premium/ilustracao-de-texto-de-reggaeton-desenhada-a-mao_52683-137129.jpg",
+        "fundo":"#ff1b5c",
+        "texto":"#fec600",
+        "id": 8,
         "musicas":[
             {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Raggaeton/Bad%20Bunny%20-%20Tit%C3%AD%20Me%20Pregunt%C3%B3%20(Video%20Oficial)%20_%20Un%20Verano%20Sin%20Ti%20%5BCr8K88UcO0s%5D.mp3",
                 "nome":"Tití Me Preguntó",
@@ -390,9 +398,10 @@
     },
     {
         "nome":"Sertanejo",
-        "img":"https://upload.wikimedia.org/wikipedia/commons/e/e8/Acoustic_guitar_icon.png",
-        "fundo":"#ffd4a1",
-        "texto":"#000000ff",
+        "img":"https://i.pinimg.com/736x/9b/43/e6/9b43e63ab780ae193dec51fb870868bd.jpg",
+        "fundo":"#1a1a1a",
+        "texto":"#dcd992",
+        "id": 9,
         "musicas":[
             {"link":"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Sertanejo/Chit%C3%A3ozinho%20&%20Xoror%C3%B3%20-%20Evid%C3%AAncias%20(A%C3%BAdio%20Oficial)%20%5BzjE7l9h4XfI%5D.mp3",
                 "nome":"Evidências",

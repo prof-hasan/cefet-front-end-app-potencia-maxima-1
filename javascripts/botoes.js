@@ -1,5 +1,5 @@
 
-import { listaPlaylistEl, playlists, adicionarPlaylist, removeplaylist } from "./playlists.js";
+import { listaPlaylistEl, playlists, bibliotecaPlaylists, adicionarPlaylist, removeplaylist, listaPesquisa, adicionarPlaylistPesquisa } from "./playlists.js";
 import { setIndicePlaylist, bibliotecaMusicas, addMusica, reproduzir, proximaMusica, musicaAnterior, pausar } from "./player.js";
 
 
@@ -175,4 +175,42 @@ inputPesquisaEl.addEventListener('focus', () => {
 
 inputPesquisaEl.addEventListener('blur', () => {
     caixaPesquisaEl.classList.toggle('ativa');
+});
+
+inputPesquisaEl.addEventListener('focus', () => {
+    caixaPesquisaEl.classList.add('ativa');
+    caixaPesquisaEl.innerHTML = '';
+    bibliotecaPlaylists.forEach(e => listaPesquisa(e));
+});
+
+caixaPesquisaEl.addEventListener('mousedown', (e) => {
+    e.preventDefault();
+});
+
+inputPesquisaEl.addEventListener('blur', () => {
+    caixaPesquisaEl.classList.remove('ativa');
+});
+
+inputPesquisaEl.addEventListener('input', (e) => {
+    let valor = e.target.value;
+
+    if(valor === '') {
+        caixaPesquisaEl.innerHTML = '';
+        bibliotecaPlaylists.forEach(e => listaPesquisa(e));
+        return;
+    }
+
+    let bibliotecaFiltrda = bibliotecaPlaylists.filter( playlist => playlist.nome.toLowerCase().includes(valor));
+
+    caixaPesquisaEl.innerHTML = '';
+    bibliotecaFiltrda.forEach(e => listaPesquisa(e));
+});
+
+caixaPesquisaEl.addEventListener('click', (e) => {
+    const botao = e.target.closest('.btn-pesquisa');
+    if (!botao) {return};
+
+    adicionarPlaylistPesquisa(parseInt(botao.dataset.id));
+    indice = playlists.length - 1;
+    listaPlaylistEl.style.transform = `translateX(${-indice * 800}px)`;
 });
