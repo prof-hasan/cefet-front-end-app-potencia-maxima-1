@@ -1,4 +1,12 @@
-import { playlists } from "./playlists.js";
+let playlists;
+fetch("./JSONs/biblioteca-playlists.json")
+    .then(response => response.json())
+    .then(musicas => {
+        playlists = musicas;
+        console.log("Playlists", playlists);
+    })
+
+
 
 let indicePlaylist = 0;
 let indiceMusica = 0;
@@ -13,9 +21,41 @@ function setIndicePlaylist(i) {
     carregarMusica();
 }
 
+function adicionaMusica() {
+    let adicionadas = document.querySelectorAll('#coloca-musica input[type="checkbox"]:checked');
+
+    adicionadas.forEach(cb => {
+        if(!playlists[indicePlaylist].musicas.find(mus => mus.id == Number(cb.value))) {
+            let novoId = {id: Number(cb.value)};
+            playlists[indicePlaylist].musicas.push(novoId);
+        } 
+    });
+}
+
 function carregarMusica() {
-    const musica = playlists[indicePlaylist].musicas[indiceMusica];
-    if (!musica) return;
+    let musica
+    const listaId = playlists[indicePlaylist].musicas;
+    if (!listaId) return;
+    const idObj = listaId[indiceMusica];
+    if(!idObj) return;
+    const id = idObj.id;
+    if(!id) return;
+
+    
+
+    for(let p of playlists) {
+        const achada = p.musicas.find(mus => mus.id === id);
+        if(achada) {
+            console.log(p.musicas);
+            musica = achada;
+            break;
+        }
+    }
+
+    console.log(id);
+    console.log(musica);
+    console.log(playlists[indicePlaylist].musicas);
+    
 
     audio.src = musica.link;
     audio.load();
@@ -50,6 +90,7 @@ function musicaAnterior() {
 
 export {
     setIndicePlaylist,
+    adicionaMusica,
     reproduzir,
     pausar,
     proximaMusica,

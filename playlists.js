@@ -11,25 +11,30 @@ let playlists = [
         fundo:"#000000ff",
         texto:"#ffffffff",
         musicas:[
-            {link:"rock/AC_DC - Thunderstruck [mBksMIl9Kf0].mp3",
+            {link:"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/AC_DC-Thunderstruck-rock.mp3",
                 nome:"Thunderstruck",
-                autor:"AC_DC"
+                autor:"AC_DC",
+                id: 1
             },
-            {link:"rock/Black Sabbath - War Pigs [PrZFscfJxXc].mp3",
+            {link:"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/BlackSabbath-WarPigs-rock.mp3",
                 nome:"War Pigs",
-                autor:"Black Sabbath"
+                autor:"Black Sabbath",
+                id: 2
             },
-            {link:"rock/Guns N' Roses - Sweet Child O' Mine (Lyrics) [qoflJn7zkFM].mp3",
+            {link:"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/GunsN'Roses-SweetChildO'Mine-rock.mp3",
                 nome:"Sweet Child O' Mine",
-                autor:"Guns N' Roses"
+                autor:"Guns N' Roses",
+                id: 3
             },
-            {link:"rock/Iron Man (2012 Remaster) [b3-QqGVt-tM].mp3",
+            {link:"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/BlackSabbath-IronMan-rock.mp33",
                 nome:"Iron Man (2012 Remaster)",
-                autor:"Black Sabbath"
+                autor:"Black Sabbath",
+                id: 4
             },
-            {link:"rock/Ozzy Osbourne - No More Tears (Official Audio) [mX_8p7NaibQ].mp3",
+            {link:"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/OzzyOsbourne-NoMoreTears-rock.mp3",
                 nome:"No More Tears",
-                autor:"Ozzy Osbourne"
+                autor:"Ozzy Osbourne",
+                id: 5
             }
         ]
     },
@@ -39,25 +44,30 @@ let playlists = [
         fundo:"#ffea00",
         texto:"#000000ff",
         musicas:[
-            {link:"rap/Eminem - Rap God (Audio) [S7cQ3b0iqLo].mp3",
+            {link:"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Eminem-RapGod-rap.mp3",
                 nome:"Rap God",
-                autor:"Eminem"
+                autor:"Eminem",
+                id: 6
             },
-            {link:"rap/Eminem - Without Me (Audio) [pyb13N80DZQ].mp3",
+            {link:"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Eminem-WithoutMe-rap.mp3",
                 nome:"Without Me",
-                autor:"Eminem"
+                autor:"Eminem",
+                id: 7
             },
-            {link:"rap/The Real Slim Shady [r5MR7_INQwg].mp3",
+            {link:"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/Eminem-TheRealSlimShady-rap.mp3",
                 nome:"The Real Slim Shady",
-                autor:"Eminem"
+                autor:"Eminem",
+                id: 8
             },
-            {link:"rap/Travis Scott - FE_N (Lyrics) [3OUdeW4HmgE].mp3",
+            {link:"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/TravisScott-FE_N-rap.mp3",
                 nome:"FE!N",
-                autor:"Travis Scott"
+                autor:"Travis Scott",
+                id: 9
             },
-            {link:"rap/YG - Go Loko Ft Jon Z & Tyga (Lyrics) [EcXMJPqmbx4].mp3",
+            {link:"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/YG-GoLoko-rap.mp3",
                 nome:"Go Loko",
-                autor:"YG"
+                autor:"YG",
+                id: 10
             }
         ]
     },
@@ -67,25 +77,30 @@ let playlists = [
         fundo:"#ffaaf9",
         texto:"#000000ff",
         musicas:[
-            {link:"pop/Arizona Zervas - ROXANNE (Lyrics) [mfYUtROIzDk].mp3",
+            {link:"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/ArizonaZervas-ROXANNE-pop.mp3",
                 nome:"ROXANNE",
-                autor:"Arizona Zervas"
+                autor:"Arizona Zervas",
+                id: 11
             },
-            {link:"pop/Bruno Mars - The Lazy Song (Official Music Video) [fLexgOxsZu0].mp3",
+            {link:"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/BrunoMars-TheLazySong-pop.mp3",
                 nome:"The Lazy Song",
-                autor:"Bruno Mars"
+                autor:"Bruno Mars",
+                id: 12
             },
-            {link:"pop/Daft Punk - Get Lucky (Lyrics) ft. Pharrell Williams, Nile Rodgers [5glDAaCaazc].mp3",
+            {link:"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/DaftPunk-GetLucky-pop.mp3",
                 nome:"Get Lucky",
-                autor:"Daft Punk"
+                autor:"Daft Punk",
+                id: 13
             },
-            {link:"pop/Steve Lacy - Bad Habit (Lyrics) [bU2EvRBUmxc].mp3",
+            {link:"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/SteveLacy-BadHabit-pop.mp3",
                 nome:"Bad Habit",
-                autor:"Steve Lacy"
+                autor:"Steve Lacy",
+                id: 14
             },
-            {link:"pop/TheFatRat - Unity [n8X9_MgEdCg].mp3",
+            {link:"https://github.com/potenciamusicas-ui/pmoutseinccaiamax/raw/refs/heads/main/TheFatRat-Unity-pop.mp3",
                 nome:"Unity",
-                autor:"TheFatRat"
+                autor:"TheFatRat",
+                id: 15
             }
         ]
     }
