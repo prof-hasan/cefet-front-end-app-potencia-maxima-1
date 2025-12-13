@@ -1,6 +1,6 @@
 
 import { listaPlaylistEl, playlists, adicionarPlaylist, removeplaylist } from "./playlists.js";
-import { setIndicePlaylist, reproduzir, proximaMusica, musicaAnterior } from "./player.js";
+import { setIndicePlaylist, bibliotecaMusicas, addMusica, reproduzir, proximaMusica, musicaAnterior, pausar } from "./player.js";
 
 
 let btnEsquerdoEl = document.querySelector('#botao-esquerdo');
@@ -10,12 +10,17 @@ let btnDarkModeEl = document.querySelector('#dark-mode');
 let inputPesquisaEl = document.querySelector('#pesquisar')
 let btnRemoverEl = document.querySelector('#remover');
 let btnAdicionarPlaylistEl = document.querySelector('#criar');
-let btnsSairEl = document.querySelectorAll('.sair')
+let btnAdicionarMusicaEl = document.querySelector('#adicionar-musica');
+let btnsSairEl = document.querySelectorAll('.sair');
+let btnsExitEl = document.querySelectorAll('.exit');
 let btnAdicionarConfirmar = document.querySelector('#adicionar-confirmacao');
+let btnMusicaConfirmacao = document.querySelector('#musica-confirmacao');
 let btnSelecionar = document.querySelector('#selecionar');
 let btnVoltarMusica = document.querySelector('#voltar-musica');
 let btnProximaMusica = document.querySelector('#proxima-musica');
 let caixaPesquisaEl = document.querySelector('#caixa-de-pesquisa');
+let btnPausarMusica = document.querySelector('#pausar');
+let preencheInput = document.querySelector('#preenche-input');
 
 
 let indice = 0;
@@ -27,6 +32,12 @@ if(darkMode === true) {
 
     bodyEl.classList.add('dark');
 }
+
+btnPausarMusica.addEventListener("click", () => {
+    console.log("▶ Pausando playlist:", indice);
+    setIndicePlaylist(indice);
+    pausar();
+});
 
 btnDireitoEl.addEventListener('click', () => {
     if(indice == playlists.length - 1) {
@@ -92,8 +103,20 @@ btnAdicionarPlaylistEl.addEventListener("click", () => {
     return;
 });
 
+btnAdicionarMusicaEl.addEventListener('click', () => {
+    autoPreencheInput();
+    let janelaMusicaEl = document.querySelector('#janela-musicas');
+    let inputMusicaEl = document.querySelector('#input-musica');
+
+    janelaMusicaEl.classList.toggle("oculto");
+    inputMusicaEl.classList.toggle("oculto");
+})
+
 btnsSairEl.forEach(btn => {
     btn.addEventListener("click", () => esconderJanelas())});
+
+btnsExitEl.forEach(btn => {
+    btn.addEventListener("click", () => ocultarJanelas())});
 
 btnAdicionarConfirmar.addEventListener("click", () => {
     adicionarPlaylist();
@@ -103,6 +126,11 @@ btnAdicionarConfirmar.addEventListener("click", () => {
     esconderJanelas();
 });
 
+btnMusicaConfirmacao.addEventListener("click", () => {
+    addMusica();
+    ocultarJanelas();
+})
+
 function esconderJanelas() {
     let janelaInteracaoEl = document.querySelector('#janelas-interacoes');
     let janelaAdicionarEl = document.querySelector('#adicionar');
@@ -111,6 +139,34 @@ function esconderJanelas() {
     janelaAdicionarEl.classList.toggle("escondido");
 
     return;
+}
+
+function ocultarJanelas() {
+    let janelaMusicaEl = document.querySelector('#janela-musicas');
+    let inputMusicaEl = document.querySelector('#input-musica');
+
+    janelaMusicaEl.classList.toggle("oculto");
+    inputMusicaEl.classList.toggle("oculto");
+
+    return;
+}
+
+function autoPreencheInput() {
+    preencheInput.innerHTML = '';
+
+    for(let i=0; i<bibliotecaMusicas.length; i++) {
+        const novoInput = document.createElement('input');
+        novoInput.type = 'checkbox';
+        novoInput.value = bibliotecaMusicas[i].id;
+
+        const label = document.createElement('label');
+        label.setAttribute('for', bibliotecaMusicas[i].id);
+        label.textContent = `${bibliotecaMusicas[i].nome} - ${bibliotecaMusicas[i].autor}`;
+
+        preencheInput.appendChild(novoInput);
+        preencheInput.appendChild(label);
+        preencheInput.appendChild(document.createElement('br'));
+    }
 }
 
 inputPesquisaEl.addEventListener('focus', () => {

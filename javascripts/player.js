@@ -21,6 +21,16 @@ function setIndicePlaylist(i) {
     carregarMusica();
 }
 
+function addMusica() {
+    const inputMarcado = document.querySelectorAll('#preenche-input input[type="checkbox"]:checked');
+    inputMarcado.forEach(cb => {
+        if(!playlists[indicePlaylist].musicas.find(mus => mus.id === Number(cb.value))) {
+            let novoId = {id: Number(cb.value)};
+            playlists[indicePlaylist].musicas.push(novoId);
+        }
+    })
+}
+
 function carregarMusica() {
     const listaMusica = playlists[indicePlaylist].musicas;
     const idMusica = listaMusica[indiceMusica].id;
@@ -69,6 +79,8 @@ function musicaAnterior() {
 
 export {
     setIndicePlaylist,
+    bibliotecaMusicas,
+    addMusica,
     reproduzir,
     pausar,
     proximaMusica,

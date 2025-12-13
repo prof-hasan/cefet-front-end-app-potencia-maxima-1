@@ -195,6 +195,62 @@ main {
     opacity: 1;
 }
 
+#janela-musicas {
+    height: 100vh;
+    width: 100vw;
+    background-color: #020202a9;
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    display: grid;
+    grid-template-columns: 1fr 35vw 1fr;
+    grid-template-rows: 1fr 70vh 1fr;
+    transition: ease-in 0.5s;
+    opacity: 1;
+}
+
+#input-musica {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    background-image: radial-gradient( var(--fundo-interacoes));
+    color: var(--navegacao-input);
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    border-radius: 10%;
+    padding: 5%;
+    position: relative;
+    opacity: 1;
+    transition: ease-in 0.5s;
+    box-shadow: var(--contraste-sair);
+}
+
+#input-musica h1 {
+    grid-row: 1 / 2;
+    justify-self: center;
+    margin-bottom: 20%;
+}
+
+#input-musica #preenche-input {
+    max-height: 800px;
+    overflow-y: auto;
+    padding: 10px;
+    border: solid 1px blueviolet;
+}
+
+#musica-confirmacao {
+    height: 50%;
+    width: 40%;
+    justify-self: center;
+    align-self: end;
+    margin-bottom: 5%;
+    border: var(--navegacao-input) 2px solid;
+    color: var(--navegacao-input);
+    background-color: transparent;
+    font-size: large;
+    border-radius: 20px;
+    transition: all, 0.5s;
+}
+
 #adicionar {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
@@ -268,6 +324,37 @@ main {
 }
 
 #janelas-interacoes.escondido, #adicionar.escondido {
+    opacity: 0;
+    transition: ease-out 0.5s;
+    z-index: -2;
+}
+
+.exit {
+    position: absolute;
+    top: 5%;
+    right: 7%;
+    width: 5%;
+    aspect-ratio: 1 / 1;
+    font-size: 1.5em;
+    justify-self: end;
+    top: 6%;
+    right: 5%;
+    justify-self: end;
+    background-color: transparent;
+    border: none;
+    color: var(--navegacao-input);
+    transition: all, 0.5s;
+    text-align: center;
+}
+
+.exit:hover {
+    text-shadow: var(--contraste-sair);
+    transition: all, 0.5s;
+}
+
+
+
+#janela-musicas.oculto, #coloca-musicas.oculto {
     opacity: 0;
     transition: ease-out 0.5s;
     z-index: -2;
