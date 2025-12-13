@@ -1,7 +1,15 @@
 import { playlists } from "./playlists.js";
 
+let bibliotecaMusicas;
 let indicePlaylist = 0;
 let indiceMusica = 0;
+
+fetch('./JSONs/biblioteca-musicas.json')
+    .then(resposta => resposta.json())
+    .then(musicas => {
+        bibliotecaMusicas = musicas;
+        console.log('Musicas', bibliotecaMusicas);
+    })
 
 const audio = new Audio();
 audio.volume = 0.7;
@@ -14,10 +22,21 @@ function setIndicePlaylist(i) {
 }
 
 function carregarMusica() {
-    const musica = playlists[indicePlaylist].musicas[indiceMusica];
-    if (!musica) return;
+    const listaMusica = playlists[indicePlaylist].musicas;
+    const idMusica = listaMusica[indiceMusica].id;
+    let musicaAtual;
 
-    audio.src = musica.link;
+    for(let b of bibliotecaMusicas) {
+        const atual = bibliotecaMusicas.find(mus => mus.id === idMusica);
+        musicaAtual = atual;
+    }
+
+    console.log(idMusica);
+    console.log(musicaAtual);
+    
+    if (!musicaAtual) return;
+
+    audio.src = musicaAtual.link;
     audio.load();
 }
 

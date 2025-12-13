@@ -1,6 +1,6 @@
 
 import { listaPlaylistEl, playlists, adicionarPlaylist, removeplaylist } from "./playlists.js";
-import { setIndicePlaylist, reproduzir, proximaMusica, musicaAnterior, pausar } from "./player.js";
+import { setIndicePlaylist, reproduzir, proximaMusica, musicaAnterior } from "./player.js";
 
 
 let btnEsquerdoEl = document.querySelector('#botao-esquerdo');
@@ -16,7 +16,6 @@ let btnSelecionar = document.querySelector('#selecionar');
 let btnVoltarMusica = document.querySelector('#voltar-musica');
 let btnProximaMusica = document.querySelector('#proxima-musica');
 let caixaPesquisaEl = document.querySelector('#caixa-de-pesquisa');
-let btnPausarMusica = document.querySelector('#pausar');
 
 
 let indice = 0;
@@ -28,12 +27,6 @@ if(darkMode === true) {
 
     bodyEl.classList.add('dark');
 }
-
-btnPausarMusica.addEventListener("click", () => {
-    console.log("▶ Pausando playlist:", indice);
-    setIndicePlaylist(indice);
-    pausar();
-});
 
 btnDireitoEl.addEventListener('click', () => {
     if(indice == playlists.length - 1) {
