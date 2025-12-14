@@ -3,7 +3,6 @@ let inputNome = document.querySelector('#adicionar-nome')
 let inputImg = document.querySelector('#adicionar-imagem');
 let inputFundo = document.querySelector('#adicionar-fundo');
 let inputTexto =document.querySelector('#adicionar-texto');
-let caixaPesquisaEl = document.querySelector('#caixa-de-pesquisa');
 
 let primeiraVez = localStorage.getItem('loginAnterior');
 primeiraVez = JSON.parse(primeiraVez);
@@ -73,24 +72,6 @@ function adicionarPlaylist() {
     localStorage.setItem('userPlaylists', JSON.stringify(playlists));
 };
 
-function adicionarPlaylistPesquisa(i) {
-    let indice = bibliotecaPlaylists.findIndex(p => p.id == i)
-    playlists.push(bibliotecaPlaylists[indice]);
-
-    limparllista();
-    playlists.forEach(adicionarlista);
-    localStorage.setItem('userPlaylists', JSON.stringify(playlists));
-};
-
-function listaPesquisa(playlist) {
-    let novoItem = document.createElement('div');
-    novoItem.classList.add('item');
-    novoItem.innerHTML = `<h2>${playlist.nome}</h2>
-                          <button class="btn-pesquisa" data-id="${playlist.id}">+</button>`;
-
-    caixaPesquisaEl.appendChild(novoItem);
-}
-
 inicializar();
 
-export { listaPlaylistEl, playlists, bibliotecaPlaylists, adicionarPlaylist, removeplaylist, listaPesquisa, adicionarPlaylistPesquisa };
+export { listaPlaylistEl, playlists, bibliotecaPlaylists, adicionarPlaylist, removeplaylist };
