@@ -1,7 +1,15 @@
 import { playlists } from "./playlists.js";
 
+let bibliotecaMusicas;
 let indicePlaylist = 0;
 let indiceMusica = 0;
+
+fetch('./JSONs/biblioteca-musicas.json')
+    .then(resposta => resposta.json())
+    .then(musicas => {
+        bibliotecaMusicas = musicas;
+        console.log('Musicas', bibliotecaMusicas);
+    })
 
 const audio = new Audio();
 audio.volume = 0.7;
@@ -13,11 +21,32 @@ function setIndicePlaylist(i) {
     carregarMusica();
 }
 
-function carregarMusica() {
-    const musica = playlists[indicePlaylist].musicas[indiceMusica];
-    if (!musica) return;
+function addMusica() {
+    const inputMarcado = document.querySelectorAll('#preenche-input input[type="checkbox"]:checked');
+    inputMarcado.forEach(cb => {
+        if(!playlists[indicePlaylist].musicas.find(mus => mus.id === Number(cb.value))) {
+            let novoId = {id: Number(cb.value)};
+            playlists[indicePlaylist].musicas.push(novoId);
+        }
+    })
+}
 
-    audio.src = musica.link;
+function carregarMusica() {
+    const listaMusica = playlists[indicePlaylist].musicas;
+    const idMusica = listaMusica[indiceMusica].id;
+    let musicaAtual;
+
+    for(let b of bibliotecaMusicas) {
+        const atual = bibliotecaMusicas.find(mus => mus.id === idMusica);
+        musicaAtual = atual;
+    }
+
+    console.log(idMusica);
+    console.log(musicaAtual);
+    
+    if (!musicaAtual) return;
+
+    audio.src = musicaAtual.link;
     audio.load();
 }
 
@@ -50,6 +79,8 @@ function musicaAnterior() {
 
 export {
     setIndicePlaylist,
+    bibliotecaMusicas,
+    addMusica,
     reproduzir,
     pausar,
     proximaMusica,
