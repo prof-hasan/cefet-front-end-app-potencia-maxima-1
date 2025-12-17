@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilos.css">
+        <title>lista musical</title>
+        <script src="https://kit.fontawesome.com/c114eefcbd.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <label for="pesquisar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </label>
+                <input id="pesquisar" type="text" placeholder="Buscar Playlist...">
+            </nav>
+            <article id="outros">
+                <button id="dark-mode"><i class="fa-solid fa-circle-half-stroke"></i></button>
+                <button id="profile"><i class="fa-solid fa-user"></i></button>
+            </article>
+            <section id="caixa-de-pesquisa">
+                
+            </section>
+        </header>
+        <main>
+            <button class="navegar" id="botao-esquerdo"><i class="fa-solid fa-arrow-left"></i></button>
+
+            <section id="lista-playlists">
+
+            </section>
+            
+            <button class="navegar" id="botao-direito"><i class="fa-solid fa-arrow-right"></i></button>
+
+            <section id="botoes-interagir">
+                <button id="selecionar"><i class="fa-solid fa-play"></i></button>
+                <button id="pausar"><i class="fa-solid fa-pause"></i></button>
+                <button id="criar"><i class="fa-solid fa-plus"></i></button>
+                <button id="adicionar-musica"><i class="fa-solid fa-bars"></i></button>
+                <button id="remover"><i class="fa-solid fa-trash-can"></i></button>
+                <button id="voltar-musica"><i class="fa-solid fa-backward"></i></button>
+                <button id="proxima-musica"><i class="fa-solid fa-forward"></i></button>
+            </section>
+            
+
+        </main>
+
+        <div class="escondido" id="janelas-interacoes">
+            <section class="escondido" id="adicionar">
+                <h1>Adicionar Playlists</h1>
+
+                <article id="preenchimento">
+                    <label for="adicionar-nome">Nome:</label><input id="adicionar-nome" type="text" max="30" placeholder="Musica classica...">
+
+                    <label for="adicionar-imagem">Imagem:</label><input id="adicionar-imagem" type="text" placeholder="https//...">
+
+                    <label for="adicionar-fundo">Fundo:</label><input id="adicionar-fundo" type="color">
+
+                    <label for="adicionar-texto">Texto:</label><input id="adicionar-texto" type="color">
+                </article>
+                    
+                <button class="sair"><i class="fa-regular fa-circle-xmark"></i></button>
+                <button id="adicionar-confirmacao">Confirmar</button>
+            </section>
+
+            <section class="escondido" id="creditos">
+                    <h1>Créditos</h1>
+
+                    <article class="conteudo-creditos">
+                        <p><strong>Projeto:</strong> Lista Musical</p>
+                        <p><strong>Desenvolvedores:</strong> Christian, Arthur Lovalho, Eduardo Davi</p>
+                        <p><strong>Linguagens:</strong> HTML, CSS, JavaScript</p>
+                        <p><strong>Player:</strong> HTML5 Audio</p>
+                        <p><strong>Ícones:</strong> Font Awesome</p>
+                    </article>
+
+                    <button class="sair">X</button>
+                </section>
+        </div>
+
+        <div class="oculto" id="janela-musicas">
+            <section class="oculto" id="input-musica">
+                <h1>Adicionar musica(s)</h1>
+
+                <article id="preenche-input">
+                </article>
+
+                <button class="exit"><i class="fa-regular fa-circle-xmark"></i></button>
+                <button id="musica-confirmacao">Adicionar musica(s)</button>
+            </section>
+        </div>
+
+        <script src="./javascripts/playlists.js" type="module"></script>
+        <script src="./javascripts/player.js" type="module"></script>
+        <script src="./javascripts/botoes.js" type="module"></script>
+    </body>
+</html>
