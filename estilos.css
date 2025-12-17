@@ -204,7 +204,7 @@ main {
     grid-row: 2 / 3;
     align-self: center;
     justify-content: center;
-    gap: 2vw;
+    gap: 10px;
 }
 
 #botoes-interagir button {
@@ -363,7 +363,7 @@ main {
     transition: all, 0.5s;
 }
 
-#janelas-interacoes.escondido, #adicionar.escondido {
+#janelas-interacoes.escondido, #adicionar.escondido, #creditos.escondido {
     opacity: 0;
     transition: ease-out 0.5s;
     z-index: -2;
@@ -420,6 +420,8 @@ main {
     width: 35vw;
     min-width: 300px;
     max-width: 500px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
     background-image: radial-gradient(var(--fundo-interacoes));
     color: var(--navegacao-input);
     border-radius: 20px;

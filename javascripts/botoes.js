@@ -23,7 +23,6 @@ let btnPausarMusica = document.querySelector('#pausar');
 let preencheInput = document.querySelector('#preenche-input');
 let janelaCreditos = document.querySelector('#janelas-interacoes2');
 let creditos = document.querySelector('#creditos');
-let btnSairCreditos = document.querySelector('.sair2');
 
 
 let indice = 0;
@@ -138,8 +137,8 @@ function esconderJanelas() {
     let janelaInteracaoEl = document.querySelector('#janelas-interacoes');
     let janelaAdicionarEl = document.querySelector('#adicionar');
     
-    janelaInteracaoEl.classList.toggle("escondido");
-    janelaAdicionarEl.classList.toggle("escondido");
+    janelaInteracaoEl.classList.add("escondido");
+    janelaAdicionarEl.classList.add("escondido");
 
     return;
 }
@@ -171,14 +170,6 @@ function autoPreencheInput() {
         preencheInput.appendChild(document.createElement('br'));
     }
 }
-
-inputPesquisaEl.addEventListener('focus', () => {
-    caixaPesquisaEl.classList.toggle('ativa');
-});
-
-inputPesquisaEl.addEventListener('blur', () => {
-    caixaPesquisaEl.classList.toggle('ativa');
-});
 
 inputPesquisaEl.addEventListener('focus', () => {
     caixaPesquisaEl.classList.add('ativa');
@@ -218,7 +209,9 @@ caixaPesquisaEl.addEventListener('click', (e) => {
     listaPlaylistEl.style.transform = `translateX(${-indice * 800}px)`;
 });
 
-btnProfile.addEventListener("click", () => {
-    janelaCreditos.classList.remove('escondido2');
-    creditos.classList.remove('escondido2');
+btnProfileMenuEl.addEventListener("click", () => {
+    let janelaInteracaoEl = document.querySelector('#janelas-interacoes');
+    janelaInteracaoEl.classList.remove("escondido");
+
+    creditos.classList.remove('escondido');
 });
